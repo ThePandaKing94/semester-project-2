@@ -1,0 +1,28 @@
+body {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.playAgain {
+    margin: 30px 0;
+}
+
+#yes {
+    padding: 10px 30px;
+    background-color: rgb(7, 202, 0);
+    color: white;
+    margin-right: 10px;
+}
+
+#no {
+    margin-left: 10px;
+    padding: 10px 30px;
+    background-color: red;
+    color: white;
+}
+
+button:focus {
+    outline: none;
+  }
