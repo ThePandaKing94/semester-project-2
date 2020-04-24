@@ -1,0 +1,84 @@
+
+body {
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  header {
+      display: flex;
+      flex-direction: row;
+  }
+
+  #logoLine {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-size: 15px;
+  }
+
+  a{
+      text-decoration: none;
+      color: black;
+  }
+
+#logo {
+    float: left;
+    width: 100px;
+    height: 60px;
+}
+
+h1 {
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5px auto;
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+}
+
+#rightThing {
+    margin-right: 200px;
+}
+
+.cards {
+   border: 5px solid black;
+}
+
+.cards * {
+    text-align: center;
+}
+
+.allImg {
+    max-width: 100%;
+    position: relative;
+}
+
+#allCards {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    top: auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 13% 13% 13% 13% 13%;
+    justify-content: space-evenly;
+    row-gap: 15px;
+    background-color: rgba(red, 0.9);
+}
+
+.born {
+    background-color: red;
+    position: relative;
+    padding: 10px 2px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    margin: 5px auto;
+}
+
+button {
+    margin-bottom: 10px;
+    font-family: 'Orbitron', sans-serif;
+}
+
