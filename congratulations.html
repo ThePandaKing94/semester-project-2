@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,22 +6,32 @@
     <title>Congratulations</title>
     <link rel="stylesheet" type="text/css" href="css/congratulations.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    <div id="celebrate">
+    <canvas id="celebrate">  </canvas>
         <h1>Congratulations!</h1>
         <div id="congratulations">
-            <div id="winner"></div>
+            <div id="winner">
+                <div class="cards">
+                    <div class='fetching'> 
+                        <img id="winnerImg" class="allImg" id="">
+                        <h2 id="winnerName"></h2>
+                    </div>
+                </div>
+            </div>
             <span>You are the the true winner of Game of Thrones!</span>
         </div>
 
         <div class="playAgain">Do you want to play again?</div>
-        <div class="playAgain"><button id="yes">Yes</button><button id="no">No</button></div>
+        <div class="playAgain"><button href="index.html" id="yes">Yes</button></div>
 
-        <div>Fun Fact: Having this board played out, would have been a better ending then the actual GOT S8.</div>
-    </div>
+        <div>Fun Fact: Having this board game played out, would have been a better ending then the actual GOT S8.</div>
+
+    <audio id="music" controls autoplay>
+        <source src="ultimateVictory.mp3" type="audio/mpeg">
+      </audio>
 </body>
-<script src="js/main.js"></script>
+<script src="confetti-js-master/dist/index.min.js"></script>
 <script src="js/congratulations.js"></script>
-<script src="js/node_modules/confetti-js/dist/index.min.js"></script>
 </html>

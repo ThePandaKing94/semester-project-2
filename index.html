@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,105 +6,146 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/choose.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 
  <header>
-    <a id="backHome" href="index.html"><div id="logoLine">White Night<img id="logo" src="images/logo.jpg" alt="Game of Thrones Board Game"></div></a>
+    <a id="backHome" href="index.html"><div id="logoLine">White Night<img id="logo" src="images/logo.png" alt="Game of Thrones Board Game"></div></a>
      <h1>Choose Your Character</h1>
      <div id="rightThing"></div>
  </header>
     <div id="allCards">
-    <div class="cards">
-        <div class='fetching'> 
-            <img class="allImg" id="aryaCard" src="images/aryaImg.jpg" alt="Arya Image">
-            <h2>Arya Stark</h2>
-            <div class='title'></div>
-            <div class="bornWrite"><div class='born'>Born: das</div></div>
-             <button id="" class="choose">Choose</button>
-        </div>
-    </div>
 
     <div class="cards">
         <div class='fetching'> 
-            <img class="allImg" id="branCard" src="images/branImg.jpg" alt="Brand Image">
-            <h2>Bran Stark</h2>
-            <div class="bornWrite"><div class='born'>Born: </div></div>
-             <button id="" class="choose">Choose</button>
+            <img class="allImg" id="aryaCard" src="images/aryaImg.jpg" alt="Arya Image">
+            <h2 id="aryaName"></h2>
+            <div class='title'></div>
+             <button id="aryaBtn" class="choose">Choose</button>
+             <img class="hm" id="lol"></img>
         </div>
+        <div class="myModalArya">
+            <span class="closeArya">&times;</span>
+            <img class="modal-content" id="aryaCard" src="images/aryaImg.jpg" alt="Arya Image">
+          </div>
     </div>
+
+
+    <div class="cards">
+        <div class='fetching'> 
+            <img class="allImg" id="branCard" src="images/branImg.jpg" alt="Bran Image">
+            <h2 id="branName"></h2>
+            <button id="branBtn" class="choose">Choose</button>
+        </div>
+        <div class="myModalBran">
+            <span class="closeBran">&times;</span>
+            <img class="modal-content" id="branCard" src="images/branImg.jpg" alt="Bran Image">
+          </div>
+    </div>
+
 
     <div class="cards">
         <div class='fetching'> 
             <img class="allImg" id="cerseiCard" src="images/cerseiImg.jpg" alt="Cersei Image">
-            <h2>Cersei Lannister</h2>
-            <div class="bornWrite"><div class='born'>Born: </div></div>
-             <button id="" class="choose">Choose</button>
+            <h2 id="cerseiName"></h2>
+             <button id="cerseiBtn" class="choose">Choose</button>
         </div>
+        <div class="myModalCersei">
+            <span class="closeCersei">&times;</span>
+            <img class="modal-content" id="cerseiCard" src="images/cerseiImg.jpg" alt="Cersei Image">
+          </div>
     </div>
+
 
     <div class="cards">
         <div class='fetching'> 
             <img class="allImg" id="jaimeCard" src="images/jaimeImg.jpg" alt="Jaime Image">
-            <h2>Jaime Lannister</h2>
-            <div class="bornWrite"><div class='born'>Born: </div></div>
-             <button id="" class="choose">Choose</button>
+            <h2 id="jaimeName"></h2>
+             <button id="jaimeBtn" class="choose">Choose</button>
         </div>
+        <div class="myModalJaime">
+            <span class="closeJaime">&times;</span>
+            <img class="modal-content" id="jaimeCard" src="images/jaimeImg.jpg" alt="Jaime Image">
+          </div>
     </div>
+      
 
     <div class="cards">
         <div class='fetching'> 
             <img class="allImg" id="jonCard" src="images/jonImg.jpg" alt="Jon Image">
-            <h2>Jon Snow</h2>
-            <div class="bornWrite"><div class='born'>Born: </div></div>
-             <button id="" class="choose">Choose</button>
+            <h2 id="jonName"></h2>
+             <button id="jonBtn" class="choose">Choose</button>
         </div>
+        <div class="myModalJon">
+            <span class="closeJon">&times;</span>
+            <img class="modal-content" id="jonCard" src="images/jonImg.jpg" alt="Jon Image">
+          </div>
     </div>
+
 
     <div class="cards">
         <div class='fetching'> 
             <img class="allImg" id="samCard" src="images/samImg.jpg" alt="Sam Image">
-            <h2>Sam Tyrell</h2>
-            <div class="bornWrite"><div class='born'>Born: ad</div></div>
-             <button id="" class="choose">Choose</button>
+            <h2 id="samName"></h2>
+             <button id="samBtn" class="choose">Choose</button>
         </div>
+        <div class="myModalSam">
+            <span class="closeSam">&times;</span>
+            <img class="modal-content" id="samCard" src="images/samImg.jpg" alt="Sam Image">
+          </div>
     </div>
 
     <div class="cards">
         <div class='fetching'> 
             <img class="allImg" id="sansaCard" src="images/sansaImg.jpg" alt="Sansa Image">
-            <h2>Sana Stark</h2>
-            <div class="bornWrite"><div class='born'>Born: </div></div>
-             <button id="" class="choose">Choose</button>
+            <h2 id="sansaName"></h2>
+             <button id="sansaBtn" class="choose">Choose</button>
         </div>
+        <div class="myModalSansa">
+            <span class="closeSansa">&times;</span>
+            <img class="modal-content" id="sansaCard" src="images/sansaImg.jpg" alt="Sansa Image">
+          </div>
     </div>
 
     <div class="cards">
         <div class='fetching'> 
             <img class="allImg" id="theonCard" src="images/theonImg.jpg" alt="Theon Image">
-            <h2>Theon Greyjoy</h2>
-            <div class="bornWrite"><div class='born'>Born: asd</div></div>
-             <button id="" class="choose">Choose</button>
+            <h2 id="theonName"></h2>
+             <button id="theonBtn" class="choose">Choose</button>
         </div>
+        <div class="myModalTheon">
+            <span class="closeTheon">&times;</span>
+            <img class="modal-content" id="theonCard" src="images/theonImg.jpg" alt="Theon Image">
+          </div>
     </div>
+
 
     <div class="cards">
         <div class='fetching'> 
             <img class="allImg" id="tyrionCard" src="images/tyrionImg.jpg" alt="Tyrion Image">
-            <h2>Tyrion Lannister</h2>
-            <div class="bornWrite"><div class='born'>Born: </div></div>
-             <button id="" class="choose">Choose</button>
+            <h2 id="tyrionName"></h2>
+             <button id="tyrionBtn" class="choose">Choose</button>
         </div>
+        <div class="myModalTyrion">
+            <span class="closeTyrion">&times;</span>
+            <img class="modal-content" id="tyrionCard" src="images/tyrionImg.jpg" alt="Tyrion Image">
+          </div>
     </div>
 
     <div class="cards">
         <div class='fetching'> 
             <img class="allImg" id="varysCard" src="images/varysImg.jpg" alt="Varys Image">
-            <h2>Lord Varys</h2>
-            <div class="bornWrite"><div class='born'>Born: </div></div>
-             <button id="" class="choose">Choose</button>
+            <h2 id="varysName"></h2>
+             <button id="varysBtn" class="choose">Choose</button>
         </div>
+        <div class="myModalVarys">
+            <span class="closeVarys">&times;</span>
+            <img class="modal-content" id="varysCard" src="images/varysImg.jpg" alt="Varys Image">
+          </div>
     </div>
+ 
 </div>
 </body>
+<script src="js/index.js"></script>
 </html>
