@@ -9,7 +9,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    <canvas id="celebrate">  </canvas>
+    <canvas id="my-canvas"></canvas>
+    <div id="notCanvas">
         <h1>Congratulations!</h1>
         <div id="congratulations">
             <div id="winner">
@@ -24,14 +25,14 @@
         </div>
 
         <div class="playAgain">Do you want to play again?</div>
-        <div class="playAgain"><button href="index.html" id="yes">Yes</button></div>
+        <a id="yes" href="index.html">Yes</a>
 
-        <div>Fun Fact: Having this board game played out, would have been a better ending then the actual GOT S8.</div>
-
+        <div id="funFact">Fun Fact: Having this board game played out, would have been a better ending then the actual GOT S8.</div>
+    </div>
     <audio id="music" controls autoplay>
         <source src="ultimateVictory.mp3" type="audio/mpeg">
       </audio>
 </body>
-<script src="confetti-js-master/dist/index.min.js"></script>
+<script src="node_modules/confetti-js/dist/index.min.js"></script>
 <script src="js/congratulations.js"></script>
 </html>

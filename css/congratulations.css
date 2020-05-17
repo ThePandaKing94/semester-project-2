@@ -12,17 +12,37 @@ body {
 #yes {
     padding: 10px 30px;
     background-color: rgb(7, 202, 0);
-    color: white;
-    margin-right: 10px;
 }
 
-#no {
-    margin-left: 10px;
-    padding: 10px 30px;
-    background-color: red;
+a {
+    width: 100%;
+    height: 100%;
     color: white;
+    text-decoration: none;
+    border-radius: 15px;
 }
 
-button:focus {
+#funFact {
+    margin-top: 30px;
+}
+
+a:focus {
     outline: none;
   }
+
+  canvas {
+      top: 0;
+      left: 0;
+      position: fixed;
+      min-height: 100%;
+  }
+
+  #notCanvas {
+      position: relative;
+  }
+
+  #music {
+      margin-top: 10px;
+  }
+
+  
