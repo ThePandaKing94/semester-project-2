@@ -22,8 +22,9 @@ body {
 
 #logo {
     float: left;
-    width: 100px;
+    width: 40px;
     height: 60px;
+    margin: auto;
 }
 
 h1 {
@@ -39,7 +40,7 @@ h1 {
 }
 
 #rightThing {
-    margin-right: 200px;
+    margin-right: 100px;
 }
 
 .cards {
@@ -65,20 +66,89 @@ h1 {
     grid-template-columns: 13% 13% 13% 13% 13%;
     justify-content: space-evenly;
     row-gap: 15px;
-    background-color: rgba(red, 0.9);
-}
-
-.born {
-    background-color: red;
-    position: relative;
-    padding: 10px 2px;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
-    margin: 5px auto;
 }
 
 button {
     margin-bottom: 10px;
     font-family: 'Orbitron', sans-serif;
+    padding: 5px;
+    background-color: black;
+    color: white;
 }
 
+h2 {
+    padding-bottom: 20px;
+    border-bottom: 5px solid black;
+}
+
+/*I've copied and adjusted this from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img. */
+
+.allImg {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .allImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .myModalArya, .myModalBran, .myModalCersei, .myModalJaime, .myModalJon, .myModalSam, .myModalSansa, .myModalTheon, .myModalTyrion, .myModalVarys {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    height: 500px;
+    width: auto;
+  }
+  
+
+  
+  /* Add Animation */
+  .modal-content {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .closeArya, .closeBran, .closeCersei, .closeJaime, .closeJon, .closeSam, .closeSansa, .closeTheon, .closeTyrion, .closeVarys{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .closeArya:focus, .closeArya:hover, .closeBran:focus, .closeBran:hover,.closeCersei:focus, .closeCersei:hover,.closeJaime:focus, .closeJaime:hover,
+  .closeJon:focus, .closeJon:hover, .closeSam:focus, .closeSam:hover, .closeSansa:focus, .closeSansa:hover, .closeTheon:focus, .closeTheo:hover, 
+  .closeTyrion:focus, .closeTyrion:hover, .closeVarys:focus, .closeVarys:hover {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
